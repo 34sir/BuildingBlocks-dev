@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/settings_general_settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="auto_update"
+            android:title="@string/settings_auto_update"/>
+        <ListPreference
+            android:defaultValue="@string/default_way_to_get_data"
+            android:dialogTitle="@string/dialog_way_to_get_data"
+            android:entries="@array/way_to_get_data"
+            android:entryValues="@array/value_way_to_get_data"
+            android:key="gson_or_html"
+            android:title="@string/way_to_get_data"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="enable_cache"
+            android:title="@string/setting_enable_cahce"/>
+        <Preference
+            android:key="delete_cache"
+            android:title="@string/delete_cache"/>
+        <Preference
+            android:key="send_log"
+            android:title="@string/send_log"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_push_settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="notification"
+            android:title="@string/settings_auto_push"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_version">
+        <Preference
+            android:key="version"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
